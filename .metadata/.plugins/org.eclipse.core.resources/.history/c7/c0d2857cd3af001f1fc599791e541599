@@ -1,0 +1,23 @@
+package StepDefinitions;
+
+import java.util.concurrent.TimeUnit;
+
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+public class FotMob {
+
+	@Test
+	public void LaunchURL() throws Throwable {
+		// TODO Auto-generated method stub
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("incognito");
+		WebDriver driver = new ChromeDriver(options); 
+		driver.get("https://www.fotmob.com/");
+		driver.manage().window().maximize();
+		driver.navigate().refresh();
+	}
+
+}

@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: StepDefinitions.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.442 s <<< FAILURE! -- in StepDefinitions.TestRunner
+Login Functionality.Successful login -- Time elapsed: 0.139 s <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'User is able to launch URL' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Given("User is able to launch URL")
+public void user_is_able_to_launch_url() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
